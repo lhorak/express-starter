@@ -1,0 +1,31 @@
+{
+  "name": "express-starter",
+  "version": "1.0.0",
+  "main": "dist/main.js",
+  "repository": "git@github.com:lhorak/express-starter.git",
+  "author": "Lukas Horak <lhorak@securityscorecard.io>",
+  "license": "MIT",
+  "scripts": {
+    "develop": "nodemon --exec babel-node src/main.js",
+    "build": "babel src --out-dir dist",
+    "test": "jest",
+    "lint": "eslint src/**/*.js",
+    "format": "prettier --write \"src/**/*.{js,json,md}\""
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.8.4",
+    "@babel/node": "^7.8.4",
+    "@babel/preset-env": "^7.8.4",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-import": "^2.20.1",
+    "jest": "^25.1.0",
+    "nodemon": "^2.0.2",
+    "prettier": "^1.19.1"
+  }
+}
